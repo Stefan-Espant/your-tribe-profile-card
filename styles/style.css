@@ -1,18 +1,20 @@
 * {
-  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   height:100vh;
+  background-image: url("assets/austria.jpg");
 }
 
 body {
   height:100vh;
-  font-family: open sans;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   display:flex;
   justify-content:center;
   align-items:center;
-  color:#10214e;
 }
 
 article {
@@ -42,7 +44,8 @@ header {
 
 h1 {
   margin:2rem 0 1rem;
-  color: rgba(0,239,255,1);
+  color: #fff;
+  font-family: playfair display;
 }
 
 button {
@@ -136,6 +139,18 @@ article > p {
   text-align:center;
   border-radius: 0 0 1rem 1rem;
   width:100%;
+}
+
+.austria {
+  background-image: url(/assets/austria.jpg);
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Color */
+.linear-dark-blue {
+  background-image: linear-gradient(rgb(7, 7, 69), rgb(31, 67, 140));
 }
 
 /* expand content */
