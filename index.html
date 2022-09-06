@@ -3,69 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
     <title>Stefan van der Kort · Visitekaartje</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PlayfairDisplay">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="icon" type="image/x-icon" href="assets/2020-Espant-logo-vignet-wit-256x256.png">
+    
   </head>
-  <body class="linear-dark-blue">
-    <article>
-      <header>
+  <body>
+
+    <div class="top-bar">
+      <a class="topbar" href="">Info</a>
+      <a class="topbar" href="https://steefan.nl">Portfolio</a>
+      <a class="topbar" href="mailto:info@espant.com">Mail mij</a>
+    </div>
+    <header>
+      <div>
         <h1>Stefan van der Kort</h1>
-        <p>Creative Frontend Developer in constructing</p>
-        <button>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#2c3e50"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M4 8v-2a2 2 0 0 1 2 -2h2" />
-            <path d="M4 16v2a2 2 0 0 0 2 2h2" />
-            <path d="M16 4h2a2 2 0 0 1 2 2v2" />
-            <path d="M16 20h2a2 2 0 0 0 2 -2v-2" />
-          </svg>
+        <p id="subtitle">👇 Lees verder wie ik ben 👇</p>
+      </div>
+    </header>
+    <div class="bg">
+      <span class="unit1"></span>
+      <span class="unit2"></span>
+      <span class="unit3"></span>
+      <span class="unit4"></span>
+    </div>
+    <main>
+      <ul id="cards">
+        <li class="card" id="card_1">
+          <div class="card__content">
+            <div>
+              <h2>Over mij</h2>
+              <p>Voordat ik aan de HvA begon</p>
+              <p><a href="#top" class="btn btn--accent">Read more</a></p>
+              <button class="button btn-1">Lees verder</button>
+            </div>
+            <figure>
+              <img src="assets/kvk.jpg" alt="Image description">
+            </figure>
+          </div>
+        </li>
+        <li class="card" id="card_2">
+          <div class="card__content">
+            <div>
+              <h2>Studies</h2>
+              <p>Voordat ik aan de HvA begon</p>
+              <p><a href="#top" class="btn btn--accent">Read more</a></p>
+              <button class="button btn-1">Lees verder</button>
+            </div>
+            <figure>
+              <img src="assets/mediavormgever.jpg" alt="Image description">
+            </figure>
+          </div>
+        </li>
+        <li class="card" id="card_3">
+          <div class="card__content">
+            <div>
+              <h2>Passies</h2>
+              <p>Voordat ik aan de HvA begon</p>
+              <p><a href="#top" class="btn btn--accent">Read more</a></p>
+              <button class="button btn-1">Lees verder</button>
+            </div>
+            <figure>
+              <img src="assets/golf-cabrio.jpg" alt="Image description">
+            </figure>
+          </div>
+        </li>
 
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="red"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M15 19v-2a2 2 0 0 1 2 -2h2" />
-            <path d="M15 5v2a2 2 0 0 0 2 2h2" />
-            <path d="M5 15h2a2 2 0 0 1 2 2v2" />
-            <path d="M5 9h2a2 2 0 0 0 2 -2v-2" />
-          </svg>
-        </button>
-      </header>
+      </ul>
+    </main>
+    <aside>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem repellat non ratione eum provident quaerat obcaecati dicta autem voluptates sit cum quis distinctio, atque sint commodi reprehenderit perspiciatis iure velit molestiae eos molestias ipsa nihil quia? Porro tempore in fugit, aspernatur et temporibus aliquam magnam adipisci deleniti dicta repellat alias nostrum impedit quidem odit excepturi nam. Itaque numquam unde quae dignissimos exercitationem placeat, ipsa amet tempora vitae ullam animi! Hic asperiores in esse atque expedita dolorem officia illo commodi fugit earum ab, assumenda optio, sed repellat. Maiores laudantium reprehenderit suscipit accusamus assumenda, debitis nemo ut sapiente numquam doloremque alias explicabo minus autem harum illum dicta. Unde obcaecati inventore repellat id eligendi eaque, rerum aliquam maiores aspernatur cumque tenetur quo qui mollitia atque quasi voluptate ipsum neque explicabo voluptatem quibusdam beatae quae iste vero doloribus! Natus libero quibusdam molestias harum atque, assumenda doloribus quis, quam corporis, voluptas suscipit magni! Enim sapiente totam consequatur repellat maxime placeat perferendis iste maiores soluta, obcaecati incidunt expedita eius cumque ipsa quo sed. Minus distinctio culpa cumque labore nulla laborum ex, explicabo magni mollitia eaque aliquam vero blanditiis quae, id necessitatibus error voluptas harum tempora sint porro. Facilis beatae quasi soluta et ipsum suscipit repellendus inventore.</p>
+      
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, ipsam molestias. Fuga similique, dolor tempora rerum perferendis ipsam ullam doloribus beatae esse facilis quae sit excepturi expedita non, sunt accusantium magnam? Animi nesciunt nostrum eligendi iusto voluptatum hic qui. Quod distinctio qui nobis et doloremque. Fuga, itaque? Laborum dignissimos nobis quaerat optio voluptatum similique unde, neque cupiditate, vel, fugiat dolore? Accusantium neque deserunt ducimus enim, illum laborum magni ipsam eos optio aspernatur nam necessitatibus quod natus, dolor laboriosam illo velit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem repellat non ratione eum provident quaerat obcaecati dicta autem voluptates sit cum quis distinctio, atque sint commodi reprehenderit perspiciatis iure velit molestiae eos molestias ipsa nihil quia? Porro tempore in fugit, aspernatur et temporibus aliquam magnam adipisci deleniti dicta repellat alias nostrum impedit quidem odit excepturi nam. Itaque numquam unde quae dignissimos exercitationem placeat, ipsa amet tempora vitae ullam animi! Hic asperiores in esse atque expedita dolorem officia illo commodi fugit earum ab, assumenda optio, sed repellat. Maiores laudantium reprehenderit suscipit accusamus assumenda, debitis nemo ut sapiente numquam doloremque alias explicabo minus autem harum illum dicta. Unde obcaecati inventore repellat id eligendi eaque, rerum aliquam maiores aspernatur cumque tenetur quo qui mollitia atque quasi voluptate ipsum neque explicabo voluptatem quibusdam beatae quae iste vero doloribus! Natus libero quibusdam molestias harum atque, assumenda doloribus quis, quam corporis, voluptas suscipit magni! Enim sapiente totam consequatur repellat maxime placeat perferendis iste maiores soluta, obcaecati incidunt expedita eius cumque ipsa quo sed. Minus distinctio culpa cumque labore nulla laborum ex, explicabo magni mollitia eaque aliquam vero blanditiis quae, id necessitatibus error voluptas harum tempora sint porro. Facilis beatae quasi soluta et ipsum suscipit repellendus inventore.</p>
+      
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, ipsam molestias. Fuga similique, dolor tempora rerum perferendis ipsam ullam doloribus beatae esse facilis quae sit excepturi expedita non, sunt accusantium magnam? Animi nesciunt nostrum eligendi iusto voluptatum hic qui. Quod distinctio qui nobis et doloremque. Fuga, itaque? Laborum dignissimos nobis quaerat optio voluptatum similique unde, neque cupiditate, vel, fugiat dolore? Accusantium neque deserunt ducimus enim, illum laborum magni ipsam eos optio aspernatur nam necessitatibus quod natus, dolor laboriosam illo velit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem repellat non ratione eum provident quaerat obcaecati dicta autem voluptates sit cum quis distinctio, atque sint commodi reprehenderit perspiciatis iure velit molestiae eos molestias ipsa nihil quia? Porro tempore in fugit, aspernatur et temporibus aliquam magnam adipisci deleniti dicta repellat alias nostrum impedit quidem odit excepturi nam. Itaque numquam unde quae dignissimos exercitationem placeat, ipsa amet tempora vitae ullam animi! Hic asperiores in esse atque expedita dolorem officia illo commodi fugit earum ab, assumenda optio, sed repellat. Maiores laudantium reprehenderit suscipit accusamus assumenda, debitis nemo ut sapiente numquam doloremque alias explicabo minus autem harum illum dicta. Unde obcaecati inventore repellat id eligendi eaque, rerum aliquam maiores aspernatur cumque tenetur quo qui mollitia atque quasi voluptate ipsum neque explicabo voluptatem quibusdam beatae quae iste vero doloribus! Natus libero quibusdam molestias harum atque, assumenda doloribus quis, quam corporis, voluptas suscipit magni! Enim sapiente totam consequatur repellat maxime placeat perferendis iste maiores soluta, obcaecati incidunt expedita eius cumque ipsa quo sed. Minus distinctio culpa cumque labore nulla laborum ex, explicabo magni mollitia eaque aliquam vero blanditiis quae, id necessitatibus error voluptas harum tempora sint porro. Facilis beatae quasi soluta et ipsum suscipit repellendus inventore.</p>
+      
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, ipsam molestias. Fuga similique, dolor tempora rerum perferendis ipsam ullam doloribus beatae esse facilis quae sit excepturi expedita non, sunt accusantium magnam? Animi nesciunt nostrum eligendi iusto voluptatum hic qui. Quod distinctio qui nobis et doloremque. Fuga, itaque? Laborum dignissimos nobis quaerat optio voluptatum similique unde, neque cupiditate, vel, fugiat dolore? Accusantium neque deserunt ducimus enim, illum laborum magni ipsam eos optio aspernatur nam necessitatibus quod natus, dolor laboriosam illo velit.</p>
+    </aside>
 
-      <img class="ik" src="assets/stefan.jpg" alt="Creative Coder" />
-
-      <dl>
-        <dt>HTML</dt>
-        <dd>🏆🏆🏆</dd>
-        <dt>CSS</dt>
-        <dd>🏆🏆</dd>
-        <dt>JavaScript</dt>
-        <dd>🏆🏆🏆🏆</dd>
-      </dl>
-
-      <p>
-        
-      </p>
-    </article>
-
-    <script src="./scripts/script.js"></script>
+    <div class="bottom-bar">
+      <a href="instagram">
+        <img src="" alt="" />
+      </a>
+      <a href="linkedin">
+        <img src="" alt="" />
+      </a>
+      <a href="github">
+        <img src="" alt="" />
+      </a>
+    </div>
   </body>
 </html>
