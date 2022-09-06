@@ -90,15 +90,21 @@
 	padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-	background: rgb(239, 242, 247);
-	color: rgb(255, 255, 255);
+  display: block;
+  height: 150vh;
+	background-image:linear-gradient(#fff,rgb(236, 240, 247));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 	text-align: center;
 	font-size: calc(1em + 0.5vw);
 }
 
-header,
-main {
+header, main {
 	width: 80vw;
 	margin: 0 auto;
 }
@@ -161,25 +167,32 @@ header {
 	object-fit: cover;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6 {
+  background: -webkit-linear-gradient(#26e, rgb(160, 180, 244));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+}
+
+p {
   color: rgb(160, 180, 244);
   letter-spacing: -0.02em;
+  font-weight: 300;
 }
 
 h1 {
   font-family: playfair display;
 	font-size: 3.6em;
-  font-weight: 400;
 }
 
 h2 {
-	font-weight: 300;
 	font-size: 2.4em;
 }
 
 p {
 	font-family: poppins;
-	font-weight: 300;
+  font-size: 0.8em;
 	line-height: 1.4;
 }
 
@@ -189,12 +202,12 @@ a {
   font-size: 0.8em;
 }
 
-.topbar {
+.top-option {
   color: rgb(160, 180, 244);
   padding: 0.4em 0.8em;
 }
 
-.topbar:hover {
+.top-option:hover {
   color: #eee;
   background-color: rgb(160, 180, 244);
   padding: 0.4em 0.8em;
@@ -226,14 +239,14 @@ aside p {
 }
 
 .top-bar {
-  display: block;
-  position: fixed;
+  display: flex;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
-  margin: 0.4em;
+  margin: 0.8em;
   z-index: 10;
-  background-image:linear-gradient(rgb(160, 180, 244, 1.0), #eee));
+  align-self: flex-start;
 }
 
 .button {
@@ -255,27 +268,35 @@ aside p {
   background-color: #26e;
 }
 
-/* background animation */
-.bg {
-  z-index: 0;
-  animation: clouds ease-in-out infinite;
-  display: block;
+/* dark & light mode */
+.dark-mode {
+  background-color: #111;
+}
+
+/* social media- */
+.bottom-bar {
+  display: flex;
   position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  margin: 0.8em;
+  z-index: 10;
+  align-self: flex-end;
 }
 
-.unit1 {
-  height: 50%;
-  width: 50%;;
-  background-color: #EB3D41;
-  animation: clouds 800ms infinite;
-  transform-origin: bottom right;
+.socials {
+  margin: 0.4em;
+  color:rgb(160, 180, 244);
+  padding: 0.4em;
 }
 
-@keyframes clouds {
-  0% {transform: scale(1) translateX(100%)}
-  
-  50% {transform: scale(.5) translateX(50%)}
-    
-  100% {transform: scaleY(1) translateX(100%)}
-        
+.socials:hover {
+  background-color: #26e;
+  color: #eee;
+  transition: 0.8s;
+}
+
+.fa {
+  font-size: 44px;
 }
