@@ -2,7 +2,7 @@
 	--card-height: 40vw;
 	--card-margin: 4vw;
 	--card-top-offset: 1em;
-	--numcards: 4;
+	--numcards: 5;
 	--outline-width: 0px;
 }
 
@@ -35,7 +35,7 @@
 	position: sticky;
 	top: 1em;
 	padding-top: calc(var(--index) * var(--card-top-offset));
-  padding: 1em;
+  	padding: 1em;
 }
 
 @supports (animation-timeline: works) {
@@ -92,6 +92,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-kerning: normal;
 }
 
 body {
@@ -105,6 +106,11 @@ body {
   font-size: calc(1em + 0.5vw);
 }
 
+::selection {
+	color: red;
+	background: yellow;
+  }
+
 @font-face {
   font-family: Playfair Display;
   src: url();
@@ -112,7 +118,7 @@ body {
 
 header, main {
 	width: 80vw;
-	margin: 0 auto;
+	margin: -2em auto 0;
 }
 
 header {
@@ -137,11 +143,10 @@ header {
 
 .card__content {
 	background: rgb(255, 255, 255);
-  border: 1px solid rgb(226, 231, 249);
+  	border: 1px solid rgb(226, 231, 249);
 	color: rgb(10, 5, 7);
-	border-radius: 1em;
+	border-radius: 0.8em;
 	overflow: hidden;
-
 	display: grid;
 	grid-template-areas: "text img";
 	grid-template-columns: 1fr 1fr;
@@ -173,18 +178,18 @@ header {
 	object-fit: cover;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
   background: -webkit-linear-gradient(#26e, rgb(160, 180, 244));
   font-family: Playfair Display;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  letter-spacing: -0.02em;
+  font-kerning: auto;
   font-weight: 500;
 }
 
 p {
   color: rgb(160, 180, 244);
-  letter-spacing: -0.02em;
+  font-kerning: normal;
   font-weight: 300;
 }
 
@@ -196,28 +201,40 @@ h2 {
 	font-size: 2.4em;
 }
 
+h6 {
+	background: -webkit-linear-gradient(#26e, rgb(160, 180, 244));
+	font-family: Poppins;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-kerning: auto;
+	font-weight: 500;
+}
+
 p {
 	font-family: poppins;
-  font-size: 0.8em;
+  	font-size: 0.8em;
 }
 
 a {
-  font-family: avenir next, sans-serif;
-  text-decoration: none;
-  font-size: 0.8em;
+  	text-decoration: none;
+  	font-size: 0.8em;
 }
 
-.top-option {
-  color: rgb(160, 180, 244);
-  padding: 0.4em 0.8em;
+li {
+	list-style: none;
 }
 
-.top-option:hover {
-  color: #eee;
-  background-color: rgb(160, 180, 244);
-  padding: 0.4em 0.8em;
-  transition: 0.8s;
-  border-radius: 0.4em;
+.link {
+  	color: rgb(160, 180, 244);
+  	padding: 0.4em 0.8em;
+}
+
+.link:hover {
+  	color: #eee;
+  	background-color: rgb(160, 180, 244);
+  	padding: 0.4em 0.8em;
+  	transition: 0.8s;
+  	border-radius: 0.4em;
 }
 
 .btn {
@@ -240,7 +257,7 @@ aside p {
 }
 
 #subtitle::after {
-  transform: scaleX(-1);
+  	transform: scaleX(-1);
 }
 
 .top-bar {
@@ -303,23 +320,57 @@ aside p {
 }
 
 a .fa {
-  display: flex;
+  display: inline-flex;
 }
 
 .fa {
   font-size: 44px;
 }
 
+.contact {
+	display: inline-flex;
+	width: inherit;
+}
+
+.contact li {
+	margin: 0.4em 0;
+}
+
+.contact > a {
+	margin: 0;
+}
+
 /* Initiaal */
 
 p::first-letter {
   font-family: Playfair Display;
+  background-color: rgb(246, 247, 252);
   color: #26e;
   font-size: 1.6em;
-  letter-spacing: -0.1em;
+  padding:0.1em 0.1em 0em 0.2em;
+  margin: 0.1em;
+  border-radius: 0.16em;
+  transition: 1.6s;
 }
 
 h2::first-letter {
   font-size: 1.2em;
   letter-spacing: -0.03em;
+}
+
+/* Lay-out */
+
+.w-25 {
+	width: 25%;
+	display: flex;
+}
+
+.w-50 {
+	width: 50%;
+	display: inline-block;
+}
+
+.w-75 {
+	width: 75%;
+	display: inline-block;
 }

@@ -1,0 +1,247 @@
+:root {
+
+/* Colors */
+
+--red: #f00;
+--orange: #ff5500;
+--yellow: #eee659;
+--green: #4da364;
+--blue: #26e;
+--purple: #7b00ff;
+--white: #eee;
+--grey: #888;
+--dark: #222;
+    
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow: none;
+}
+
+body {
+    display: block;
+    background-image:linear-gradient(#fff,rgb(236, 240, 247));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6 {
+    background: -webkit-linear-gradient(#26e, rgb(160, 180, 244));
+    font-family: Playfair Display, serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+}
+
+h1 {
+	font-size: 3.6em;
+}
+
+h2 {
+	font-size: 2.4em;
+}
+
+p {
+    font-family: poppins;
+    font-size: 0.8em;
+    color: rgb(103, 150, 244);
+}
+
+a {
+    text-decoration: none;
+    font-family: poppins;
+    font-size: 0.8em;
+    color: rgb(103, 150, 244);
+}
+
+button {
+    font-family: poppins;
+    cursor: pointer;
+}
+
+/* Lay-out */
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8em;
+}
+
+footer {
+    display: block;
+    position: absolute;
+    padding: 0.8em;
+}
+
+.w-25 {
+    width: 25%;
+    padding: 0.4em 0.8em;
+    display: inline-block;
+    position: relative;
+}
+
+.w-50 {
+    width: 50%;
+    padding: 0.4em 0.8em;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.w-75 {
+    width: 75%;
+    padding: 0.4em 0.8em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.w-50 img {
+    width: auto;
+    height: 20em;
+    margin: auto;
+    border-radius: 0.4em;
+}
+
+.dossier {
+    display: inline-block;
+    position: fixed;
+}
+
+.tab {
+    display: inline-flex;
+    margin: 0 auto;
+    background-color: #f4f8fb;
+    border: 1.6px solid #e3edf4;
+    padding: 1.6em 2.4em;
+    width: 50em;
+    border-radius: 0.8em
+}
+
+.tab-page {
+    display: block;
+    position: static;
+    z-index: 2;
+}
+
+.tab-bar {
+    display: inline-block;
+    position: relative;
+    width: auto;
+    margin: 0 0 -0.8em -0em;
+    z-index: 1;
+}
+
+.tab-bar li {
+    display: inline-block;
+    position: relative;
+    border: 1.6px #e3edf4;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: none;
+    border-left-style: solid;
+    border-radius: 0.8em 0.8em 0 0;
+}
+
+.tab-button {
+    background-color: #f4f8fb;
+    color: #26e;
+    padding: 0.8em;
+    border: none;
+    border-radius: 0.8em 0.8em 0 0;
+    transition: 0.8s;
+}
+
+.tab-button:hover {
+    color: rgb(6, 38, 104);
+    background-color: #f4f8fb;
+}
+
+.tab-butto li:active::before {
+    left: -10px;
+}
+
+.contact {
+	display: inline-flex;
+	width: inherit;
+}
+
+.contact li {
+	margin: 0.4em 0;
+}
+
+.contact > a {
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+.link {
+  	padding: 0.4em 0.8em;
+}
+
+.link:hover {
+  	color: #eee;
+  	background-color: rgb(160, 180, 244);
+  	padding: 0.4em 0.8em;
+  	transition: 0.8s;
+  	border-radius: 0.4em;
+}
+
+
+/* Footer */
+.bottom-bar {
+    display: inline-flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0.8em;
+    z-index: 10;
+    align-self: flex-end;
+  }
+  
+  a > .fa {
+    display: inline-flex;
+    font-size: 1.6em;
+  }
+  
+  .fa {
+    font-size: 44px;
+  }
+
+.socials {
+    margin: 0.4em;
+    color:rgb(160, 180, 244);
+    padding: 0.4em;
+  }
+  
+  .socials:hover {
+    background-color: #26e;
+    color: #eee;
+    transition: 0.8s;
+    border-radius: 0.25em;
+  }
+  
+  a .fa {
+    display: block;
+  }
+  
+  .fa {
+    font-size: 44px;
+  }
