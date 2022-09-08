@@ -107,8 +107,8 @@ body {
 }
 
 ::selection {
-	color: red;
-	background: yellow;
+	color: #fff;
+	background-color: rgba(34, 102, 238, 0.554);
   }
 
 @font-face {
